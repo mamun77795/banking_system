@@ -20,7 +20,7 @@
                         <label for="transaction_type">Transaction Type</label>
                         <select name="transaction_type" class="form-control" id="account_type" required>
                             <option>Select</option>
-                            <option value="deposited">Deposit</option>
+                            <option value="withdrawn">Widthdraw</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -56,4 +56,4 @@
 </script>
 
 <?php $__env->stopSection(); ?>
-<?php echo $__env->make('layout.erp.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\xampp\htdocs\banking_system\resources\views/transaction/create_trx.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layout.erp.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\xampp\htdocs\banking_system\resources\views/transaction/create_wdr.blade.php ENDPATH**/ ?>

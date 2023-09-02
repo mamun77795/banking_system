@@ -11,18 +11,19 @@ use Illuminate\Support\Facades\Session;
 class TransactionController extends Controller
 {
 
-    public function all_transaction(){
-
+    public function all_transaction()
+    {
     }
 
-    public function deposit_transaction(){
-
+    public function deposit_transaction()
+    {
     }
 
-    public function deposit(Request $request){
+    public function deposit(Request $request)
+    {
 
         $trx = new Transaction();
-        if(session('sess_user_id')){
+        if (session('sess_user_id')) {
             $user_id = Session::get('sess_user_id');
         }
         $trx->user_id = $user_id;
@@ -36,17 +37,16 @@ class TransactionController extends Controller
         $updateData = [
             'balance' => $balance + $request->amount,
         ];
-        
+
         DB::table('users')->where('id', '=', $user_id)->update($updateData);
-
     }
 
-    public function withdrawal_transaction(){
-
+    public function withdrawal_transaction()
+    {
     }
 
-    public function withdrawal(){
-
+    public function withdrawal()
+    {
     }
 
 
@@ -64,6 +64,11 @@ class TransactionController extends Controller
     public function create()
     {
         return view('transaction.create_trx');
+    }
+
+    public function create_wdr()
+    {
+        return view('transaction.create_wdr');
     }
 
     /**

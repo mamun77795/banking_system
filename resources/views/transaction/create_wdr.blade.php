@@ -20,7 +20,6 @@
                         <label for="transaction_type">Transaction Type</label>
                         <select name="transaction_type" class="form-control" id="account_type" required>
                             <option>Select</option>
-                            <option value="deposited">Deposit</option>
                             <option value="withdrawn">Widthdraw</option>
                         </select>
                     </div>

@@ -142,21 +142,21 @@
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-users"></i>
                                 <p>
-                                    Customers
+                                    Transaction
                                     <i class="fas fa-angle-left right"></i>
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="<?php echo e(route('users.index')); ?>" class="nav-link">
+                                    <a href="<?php echo e(route('transactions.create')); ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Manage Customer</p>
+                                        <p>Deposit</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?php echo e(route('users.create')); ?>" class="nav-link">
+                                    <a href="<?php echo e(route('create_wdr')); ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Create Customer</p>
+                                        <p>Withdraw</p>
                                     </a>
                                 </li>
                             </ul>

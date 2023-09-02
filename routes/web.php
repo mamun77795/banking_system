@@ -41,7 +41,7 @@ Route::middleware(['check'])->group(function () {
     Route::post('/deposit', [TransactionController::class, 'deposit'])->name('deposit');
     Route::get('/withdrawal', [TransactionController::class, 'withdrawal_transaction'])->name('withdrawal_transaction');
     Route::post('/withdrawal', [TransactionController::class, 'withdrawal'])->name('withdrawal');
-    Route::post('/create-wdr', [TransactionController::class, 'create_wdr'])->name('create_wdr');
+    Route::get('/create-wdr', [TransactionController::class, 'create_wdr'])->name('create_wdr');
 
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::resource('users', UserController::class);
